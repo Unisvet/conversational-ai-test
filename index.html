@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversational AI: History, Application, Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#003f5c] mb-2">Conversational Artificial Intelligence</h1>
+            <p class="text-xl md:text-2xl text-[#665191]">A 15-Week Master's Course on its History, Application, and Future</p>
+        </header>
+
+        <main class="space-y-12">
+            
+            <section id="introduction" class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#003f5c] mb-4">From Dialogue to Digital Minds</h2>
+                <p class="text-lg leading-relaxed">This course charts the evolution of conversational AI, from its philosophical origins in the Socratic method to the sophisticated Large Language Models (LLMs) of today. We will explore the foundational theories, pivotal technologies, and emerging architectures that enable machines to understand, reason, and converse. Students will gain a deep, technical understanding of systems like modern AI agents and their orchestration, preparing them for the next frontier of human-computer interaction.</p>
+            </section>
+            
+            <section id="history">
+                 <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">A Timeline of Thought and Technology</h2>
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                    
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#ffa600] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-[#d45087] text-xl">Ancient Dialogues</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">The works of Plato and Galileo Galilei establish dialogue as a fundamental tool for learning and discovery, a concept that underpins modern conversational AI.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#ffa600] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-[#d45087] text-xl">1950-1966: Foundations</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Alan Turing proposes the "Imitation Game" to test machine intelligence. Claude Shannon's work on information theory lays mathematical groundwork. Joseph Weizenbaum creates ELIZA, an early chatbot that mimics a psychotherapist.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#ffa600] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-[#d45087] text-xl">2017: The Transformer</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">The "Attention Is All You Need" paper introduces the Transformer architecture, revolutionizing natural language processing with its parallel processing capabilities and superior handling of long-range dependencies.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#ffa600] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-[#d45087] text-xl">2020s: The Rise of LLMs</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Large Language Models (LLMs) like those in the Gemini family demonstrate unprecedented capabilities in text generation, summarization, and complex reasoning, bringing conversational AI into the mainstream.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="core-tech" class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                     <h2 class="text-3xl font-bold text-[#003f5c] mb-4">The Engine of Conversation: LLMs</h2>
+                     <p class="mb-4">At the heart of modern conversational AI are Large Language Models built on the Transformer architecture. Unlike earlier models focused on narrow tasks, LLMs are trained on vast datasets to develop a general understanding of language, context, and reasoning. This allows them to perform a wide range of tasks without task-specific training.</p>
+                     <div class="chart-container">
+                        <canvas id="llmFocusChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h3 class="text-2xl font-bold text-[#003f5c] mb-4">Anatomy of a Transformer</h3>
+                    <p class="mb-4">The Transformer model's key innovation is the attention mechanism, allowing it to weigh the importance of different words in the input text. It consists of two main parts:</p>
+                    <div class="space-y-4">
+                        <div class="bg-blue-100 border-l-4 border-[#2f4b7c] p-4 rounded-r-lg">
+                            <h4 class="font-bold text-[#2f4b7c]">Encoder</h4>
+                            <p>Reads and processes the entire input sequence (e.g., a user's question) to build a rich contextual representation.</p>
+                        </div>
+                        <div class="text-center font-bold text-2xl text-[#665191]">&darr; &uarr;</div>
+                         <div class="bg-purple-100 border-l-4 border-[#665191] p-4 rounded-r-lg">
+                            <h4 class="font-bold text-[#665191]">Decoder</h4>
+                            <p>Generates the output sequence (e.g., the AI's answer) word by word, using the encoder's representation and its own previously generated words.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="modern-apps" class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h2 class="text-3xl font-bold text-[#003f5c] mb-4">Augmenting Intelligence with RAG</h2>
+                    <p class="mb-4">Retrieval-Augmented Generation (RAG) enhances LLMs by grounding them in external, up-to-date information. This process reduces factual inaccuracies and allows the model to draw from proprietary or real-time data sources, making its responses more reliable and relevant.</p>
+                    <div class="space-y-3 text-center">
+                        <div class="p-3 bg-gray-200 rounded-lg shadow-sm">
+                            <p><span class="font-bold">1. Query:</span> User asks a question.</p>
+                        </div>
+                        <div class="font-bold text-xl text-[#a05195]">&darr;</div>
+                        <div class="p-3 bg-gray-200 rounded-lg shadow-sm">
+                            <p><span class="font-bold">2. Retrieve:</span> System fetches relevant documents from a knowledge base.</p>
+                        </div>
+                        <div class="font-bold text-xl text-[#a05195]">&darr;</div>
+                        <div class="p-3 bg-gray-200 rounded-lg shadow-sm">
+                            <p><span class="font-bold">3. Augment:</span> The retrieved context is added to the original prompt.</p>
+                        </div>
+                        <div class="font-bold text-xl text-[#a05195]">&darr;</div>
+                        <div class="p-3 bg-gray-200 rounded-lg shadow-sm">
+                            <p><span class="font-bold">4. Generate:</span> LLM generates an answer based on both the query and the new context.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                     <h2 class="text-3xl font-bold text-[#003f5c] mb-4">The Future: Orchestrated AI Agents</h2>
+                     <p class="mb-4">The next evolution is multi-agent systems. Instead of a single monolithic AI, specialized agents collaborate to solve complex problems. An orchestrator agent delegates tasks, manages communication (via protocols like A2A), and synthesizes results, enabling more capable and robust AI applications.</p>
+                     <div class="chart-container">
+                        <canvas id="agentOrchestrationChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+             <section id="syllabus">
+                <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">15-Week Course Syllabus</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#003f5c]">
+                        <h4 class="font-bold text-gray-500">Week 1</h4>
+                        <p class="font-semibold">Intro: Learning Through Dialogs</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#003f5c]">
+                        <h4 class="font-bold text-gray-500">Week 2</h4>
+                        <p class="font-semibold">Early AI & The Turing Test</p>
+                    </div>
+                     <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#003f5c]">
+                        <h4 class="font-bold text-gray-500">Week 3</h4>
+                        <p class="font-semibold">Chatbot History: ELIZA to ALICE</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2f4b7c]">
+                        <h4 class="font-bold text-gray-500">Week 4</h4>
+                        <p class="font-semibold">Information Theory (Shannon)</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2f4b7c]">
+                        <h4 class="font-bold text-gray-500">Week 5</h4>
+                        <p class="font-semibold">The Transformer Architecture</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#2f4b7c]">
+                        <h4 class="font-bold text-gray-500">Week 6</h4>
+                        <p class="font-semibold">Rise of Large Language Models</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#665191]">
+                        <h4 class="font-bold text-gray-500">Week 7</h4>
+                        <p class="font-semibold">LLM Training and Fine-Tuning</p>
+                    </div>
+                     <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#665191]">
+                        <h4 class="font-bold text-gray-500">Week 8</h4>
+                        <p class="font-semibold">Prompt Engineering Techniques</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#a05195]">
+                        <h4 class="font-bold text-gray-500">Week 9</h4>
+                        <p class="font-semibold">Retrieval-Augmented Generation</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#a05195]">
+                        <h4 class="font-bold text-gray-500">Week 10</h4>
+                        <p class="font-semibold">Introduction to AI Agents</p>
+                    </div>
+                     <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#d45087]">
+                        <h4 class="font-bold text-gray-500">Week 11</h4>
+                        <p class="font-semibold">Agent Orchestration Frameworks</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#d45087]">
+                        <h4 class="font-bold text-gray-500">Week 12</h4>
+                        <p class="font-semibold">A2A Protocol & MCP Servers</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#f95d6a]">
+                        <h4 class="font-bold text-gray-500">Week 13</h4>
+                        <p class="font-semibold">Ethics in Conversational AI</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#f95d6a]">
+                        <h4 class="font-bold text-gray-500">Week 14</h4>
+                        <p class="font-semibold">The Future of Human-AI Teams</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-[#ff7c43]">
+                        <h4 class="font-bold text-gray-500">Week 15</h4>
+                        <p class="font-semibold">Final Project Presentations</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500">
+            <p>Infographic for Master's Course: Conversational AI</p>
+        </footer>
+    </div>
+
+    <script>
+        const brilliantBlues = ['#003f5c', '#665191', '#d45087', '#ffa600'];
+        const processColors = ['#2f4b7c', '#a05195', '#f95d6a', '#ff7c43'];
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) return label;
+            
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            } else {
+                return label;
+            }
+        };
+
+        const llmFocusCtx = document.getElementById('llmFocusChart').getContext('2d');
+        new Chart(llmFocusCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Traditional Models (Narrow Task Focus)', 'Large Language Models (General Reasoning)'],
+                datasets: [{
+                    label: 'Model Focus',
+                    data: [35, 65],
+                    backgroundColor: [brilliantBlues[1], brilliantBlues[3]],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+        
+        const agentOrchestrationCtx = document.getElementById('agentOrchestrationChart').getContext('2d');
+        new Chart(agentOrchestrationCtx, {
+            type: 'bar',
+            data: {
+                labels: [wrapLabel('Planning Agent'), wrapLabel('Data Analysis Agent'), wrapLabel('Tool-Using Agent'), wrapLabel('User Interface Agent')],
+                datasets: [{
+                    label: 'Task Complexity Handled',
+                    data: [70, 90, 85, 60],
+                    backgroundColor: processColors,
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Relative Task Complexity'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Capabilities of Specialized Agents'
+                    },
+                    tooltip: {
+                       callbacks: {
+                           title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
